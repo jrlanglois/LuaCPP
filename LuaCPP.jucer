@@ -4,15 +4,24 @@
               bundleIdentifier="com.yourcompany.LuaCPP" includeBinaryInAppConfig="1"
               jucerVersion="3.1.0">
   <MAINGROUP id="rR7LAf" name="LuaCPP">
-    <GROUP id="{B2D8A4E3-CB1F-24CA-2EE4-814B11029E98}" name="Tests"/>
-    <GROUP id="{FB846728-45BC-940F-611C-769D076709CE}" name="API"/>
-    <GROUP id="{4CB68297-D488-812A-0364-FA4DF3F95ADA}" name="Main">
-      <FILE id="ZRva4q" name="Main.cpp" compile="1" resource="0" file="Source/Main/Main.cpp"/>
+    <GROUP id="{1AE0FE72-F259-7B8E-5EB0-FA0907FBF9FA}" name="API">
+      <FILE id="AJoo6G" name="LuaCPP.cpp" compile="1" resource="0" file="Source/API/LuaCPP.cpp"/>
+      <FILE id="C8mJkW" name="LuaCPP.h" compile="0" resource="0" file="Source/API/LuaCPP.h"/>
+    </GROUP>
+    <GROUP id="{5927C9D4-D116-24F9-D628-FB537AD32E2F}" name="Main">
+      <FILE id="zFqxSV" name="Main.cpp" compile="1" resource="0" file="Source/Main/Main.cpp"/>
+    </GROUP>
+    <GROUP id="{1C67EC47-41F0-77A7-0700-F5FFA6AC5BE9}" name="Tests">
+      <FILE id="n8gzir" name="01 - Basic.lua" compile="0" resource="1" file="Source/Tests/01 - Basic.lua"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
     <VS2012 targetFolder="Builds/VisualStudio2012" toolset="v110">
       <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="LuaCPP"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="2" targetName="LuaCPP"/>
         <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
                        isDebug="1" optimisation="1" targetName="LuaCPP"/>
         <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"

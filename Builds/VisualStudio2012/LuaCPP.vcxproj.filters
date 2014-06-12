@@ -5,14 +5,14 @@
     <Filter Include="LuaCPP">
       <UniqueIdentifier>{13C649FC-0ADD-05D6-A7BE-947CFEA9C7C2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="LuaCPP\Tests">
-      <UniqueIdentifier>{19BF2573-3F84-B76D-F869-0FDC2225653F}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LuaCPP\API">
       <UniqueIdentifier>{AD3A7178-9149-4EFE-88A1-1194A0352293}</UniqueIdentifier>
     </Filter>
     <Filter Include="LuaCPP\Main">
       <UniqueIdentifier>{7FB41F05-3218-214E-9E72-A28482751680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaCPP\Tests">
+      <UniqueIdentifier>{19BF2573-3F84-B76D-F869-0FDC2225653F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Modules">
       <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
@@ -115,6 +115,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\API\LuaCPP.cpp">
+      <Filter>LuaCPP\API</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Main\Main.cpp">
       <Filter>LuaCPP\Main</Filter>
     </ClCompile>
@@ -439,6 +442,9 @@
     <ClCompile Include="..\..\..\juce\modules\juce_events\native\juce_win32_Messaging.cpp">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\juce\modules\juce_core\juce_core.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
@@ -453,6 +459,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\API\LuaCPP.h">
+      <Filter>LuaCPP\API</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\juce\modules\juce_core\text\juce_CharacterFunctions.h">
       <Filter>Juce Modules\juce_core\text</Filter>
     </ClInclude>
@@ -897,11 +906,17 @@
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Source\Tests\01 - Basic.lua">
+      <Filter>LuaCPP\Tests</Filter>
+    </None>
     <None Include="..\..\..\juce\modules\juce_core\juce_module_info">
       <Filter>Juce Modules\juce_core</Filter>
     </None>

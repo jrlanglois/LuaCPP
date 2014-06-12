@@ -4,10 +4,16 @@ Project("{84C31D5F-6E0B-B80C-70FF-EA78AFF06C45}") = "LuaCPP", "LuaCPP.vcxproj", 
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Debug|x64.ActiveCfg = Debug|x64
+		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Debug|x64.Build.0 = Debug|x64
+		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Release|x64.ActiveCfg = Release|x64
+		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Release|x64.Build.0 = Release|x64
 		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Debug|Win32.ActiveCfg = Debug|Win32
 		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Debug|Win32.Build.0 = Debug|Win32
 		{943BB258-A755-B16A-5F3C-241FBCD7D9A9}.Release|Win32.ActiveCfg = Release|Win32
